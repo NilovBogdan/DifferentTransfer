@@ -1,8 +1,8 @@
 fun main() {
-    println(calculateTransfer("Mir", 0, 10000))
+    println(calculateTransfer())
 }
 
-fun calculateTransfer(cardTipe: String, transferSumMonth: Int, nextTransfer: Int): String {
+fun calculateTransfer(cardTipe: String = "Mir", transferSumMonth: Int = 0, nextTransfer: Int = 10000): String {
     val maxLimitDay = 150_000
     val maxLimitMonth = 600000
     var different = 0
